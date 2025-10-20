@@ -1,0 +1,343 @@
+/* ============================================
+   PSYCHOLOGIST PORTFOLIO - GLOBAL STYLES
+   Light Purple & Gray Theme
+   ============================================ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================
+   CSS CUSTOM PROPERTIES (VARIABLES)
+   Centralized color system for consistent theming
+   ============================================ */
+
+:root {
+  /* Primary Brand Colors - Purple Palette */
+  --primary: #8B7CB8;              /* Main brand purple */
+  --primary-hover: #9D8FC9;        /* Lighter purple for hover states */
+  --primary-light: #6A4A9C;        /* Light purple accent */
+  --primary-dark: #52418F;         /* Dark purple accent */
+  --primary-extra-dark: #433878;   /* Deepest purple for footer */
+  
+  /* Secondary Colors - Blue-Purple Palette */
+  --secondary: #4A5FA6;            /* Secondary brand color */
+  --secondary-hover: #5B6FB8;      /* Secondary hover state */
+  --secondary-dark: #2A4480;       /* Dark secondary accent */
+  
+  /* Background Colors - Light Theme */
+  --bg-primary: #FFFFFF;           /* Pure white background */
+  --bg-secondary: #F8F7FF;         /* Very light purple tint */
+  --bg-tertiary: #E8E6F0;          /* Light lavender background */
+  --white: #FFFFFF;                /* White utility */
+  
+  /* Text Colors - Dark for Readability */
+  --text-primary: #1A1D29;         /* Primary dark text */
+  --text-secondary: #4A4A5A;       /* Secondary gray text */
+  --text-muted: #6B6B7B;           /* Muted/placeholder text */
+  
+  /* Border Colors */
+  --border: #E2E5ED;               /* Standard border color */
+  --border-light: #F0F0F5;         /* Lighter border variant */
+  
+  /* Alert/Notification Colors */
+  --success-bg: #E8F5F0;           /* Success background */
+  --success-text: #2E7D5F;         /* Success text */
+  --success-icon: #4CAF93;         /* Success icon */
+  
+  --warning-bg: #FDF4E3;           /* Warning background */
+  --warning-text: #8A6118;         /* Warning text */
+  --warning-icon: #E6B357;         /* Warning icon */
+  
+  --error-bg: #FBECEA;             /* Error background */
+  --error-text: #C53929;           /* Error text */
+  --error-icon: #D87A6A;           /* Error icon */
+  
+  --info-bg: #E8F2F4;              /* Info background */
+  --info-text: #2A5863;            /* Info text */
+  --info-icon: #5A9AA8;            /* Info icon */
+  
+  /* Footer Specific Colors */
+  --footer-bg: #433878;            /* Dark purple footer background */
+  --footer-text: #E8E6F0;          /* Light footer text */
+  --footer-hover: #C4B7CB;         /* Footer link hover color */
+}
+
+/* ============================================
+   BASE STYLES
+   Global HTML and body configurations
+   ============================================ */
+
+/* Enable smooth scrolling for anchor links and navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body fallback gradient (not actively used, .bg-calm is applied) */
+body { 
+  background: linear-gradient(135deg, 
+    #E8E6F0 0%, 
+    #D4D0E8 20%, 
+    #C4B7CB 40%, 
+    #B8B8C8 60%, 
+    #D4D0E8 80%, 
+    #E8E6F0 100%);
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: gradientShift 20s ease infinite;
+  color: var(--text-primary);
+  min-height: 100vh;
+}
+
+/* Gradient shift animation for body background */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ============================================
+   MAIN BACKGROUND CLASS
+   Applied to App container for animated gradient
+   ============================================ */
+
+/* Darker purple gradient with subtle radial overlays */
+.bg-calm {
+  background: 
+    radial-gradient(circle at 10% 20%, rgba(139, 124, 184, 0.15) 0%, transparent 25%),
+    radial-gradient(circle at 80% 80%, rgba(106, 74, 156, 0.12) 0%, transparent 30%),
+    radial-gradient(circle at 40% 40%, rgba(67, 56, 120, 0.08) 0%, transparent 35%),
+    linear-gradient(135deg, #8B7CB8 0%, #6A4A9C 25%, #52418F 50%, #433878 75%, #6A4A9C 100%);
+  animation: floatBG 25s ease-in-out infinite;
+}
+
+/* Floating background animation - creates subtle movement */
+@keyframes floatBG {
+  0% { 
+    background-position: 0% 0%, 100% 100%, 40% 40%, 0% 0%;
+  }
+  50% { 
+    background-position: 15% 10%, 85% 90%, 50% 50%, 50% 50%;
+  }
+  100% { 
+    background-position: 0% 0%, 100% 100%, 40% 40%, 0% 0%;
+  }
+}
+
+/* Light Theme Card */
+.card { 
+  @apply rounded-2xl shadow-lg p-6 backdrop-blur-md border;
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  border: 1px solid var(--border);
+  box-shadow: 
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.card:hover {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8F7FF 100%);
+  border-color: var(--primary);
+  box-shadow: 
+    0 10px 25px -3px rgba(139, 124, 184, 0.3),
+    0 4px 6px -2px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+/* Dark Theme Utility Classes */
+.bg-purple-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+.bg-purple-dark {
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-extra-dark) 100%);
+}
+
+.bg-dark-subtle {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+}
+
+.text-purple-gradient {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(139, 124, 184, 0.5);
+}
+
+.border-purple-glow {
+  border: 1px solid var(--primary);
+  box-shadow: 0 0 20px rgba(139, 124, 184, 0.3);
+}
+
+/* Enhanced Dark Shadows */
+.shadow-dark-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+}
+
+.shadow-dark {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -1px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-dark-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-dark-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.shadow-purple-glow {
+  box-shadow: 0 0 30px rgba(139, 124, 184, 0.3);
+}
+
+/* Dark Glass Morphism */
+.glass-dark {
+  background: rgba(26, 26, 46, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(139, 124, 184, 0.2);
+  box-shadow: 
+    0 8px 32px 0 rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+/* Enhanced Dark Button Styles */
+.btn-purple-primary {
+  @apply bg-gradient-to-r from-[#8B7CB8] to-[#6A4A9C] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300;
+  box-shadow: 0 4px 15px rgba(139, 124, 184, 0.3);
+}
+
+.btn-purple-primary:hover {
+  @apply bg-gradient-to-r from-[#9D8FC9] to-[#8B7CB8] transform -translate-y-1;
+  box-shadow: 0 8px 25px rgba(139, 124, 184, 0.4);
+}
+
+.btn-purple-secondary {
+  @apply bg-gradient-to-r from-[#252542] to-[#1A1A2E] text-[#C4B7CB] font-semibold py-3 px-6 rounded-xl border transition-all duration-300;
+  border-color: var(--border);
+}
+
+.btn-purple-secondary:hover {
+  @apply bg-gradient-to-r from-[#2D2A54] to-[#252542] border-[#8B7CB8] transform -translate-y-0.5;
+  color: var(--text-primary);
+}
+
+.btn-outline-purple {
+  @apply border-2 border-[#8B7CB8] text-[#8B7CB8] bg-transparent font-semibold py-3 px-6 rounded-xl transition-all duration-300;
+}
+
+.btn-outline-purple:hover {
+  @apply bg-[#8B7CB8] text-[#0F0F1A] transform -translate-y-0.5;
+}
+
+/* Custom Scrollbar for Dark Theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%);
+}
+
+/* Selection Color for Dark Theme */
+::selection {
+  background: rgba(139, 124, 184, 0.3);
+  color: var(--text-primary);
+}
+
+/* Focus States for Dark Theme */
+*:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Enhanced Link Styles for Dark Theme */
+a {
+  color: var(--primary);
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-hover);
+  text-shadow: 0 0 10px rgba(139, 124, 184, 0.5);
+}
+
+/* Dark Loading Animation */
+@keyframes pulse-dark {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-dark {
+  animation: pulse-dark 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Neon Purple Effects */
+.neon-purple {
+  text-shadow: 
+    0 0 5px var(--primary),
+    0 0 10px var(--primary),
+    0 0 15px var(--primary),
+    0 0 20px var(--primary-light);
+}
+
+.glow-purple {
+  box-shadow: 
+    0 0 5px var(--primary),
+    0 0 10px var(--primary),
+    0 0 15px var(--primary-light),
+    0 0 20px rgba(106, 74, 156, 0.5);
+}
+
+/* Text Colors for Dark Theme */
+.text-primary-dark { color: var(--text-primary); }
+.text-secondary-dark { color: var(--text-secondary); }
+.text-muted-dark { color: var(--text-muted); }
+
+/* Background Colors for Dark Theme */
+.bg-primary-dark { background-color: var(--bg-primary); }
+.bg-secondary-dark { background-color: var(--bg-secondary); }
+.bg-tertiary-dark { background-color: var(--bg-tertiary); }
+
+/* Border Colors for Dark Theme */
+.border-dark { border-color: var(--border); }
+.border-light-dark { border-color: var(--border-light); }
+
+/* Input Styles for Light Theme */
+input, textarea, select {
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  border-radius: 8px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(139, 124, 184, 0.15);
+  outline: none;
+  background: var(--white);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted);
+}

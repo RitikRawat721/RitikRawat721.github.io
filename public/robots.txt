@@ -1,0 +1,12 @@
+# robots.txt for Lorena Cebrián García - Psicóloga en Madrid
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /login
+
+# Sitemap
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
