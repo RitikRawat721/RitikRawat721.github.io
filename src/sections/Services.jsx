@@ -142,20 +142,7 @@ export default function Services() {
                 transition: { type: "spring", stiffness: 300, damping: 20 }
               }}
             >
-              {/* Popular Badge */}
-              {service.popular && (
-                <motion.div
-                  className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-20"
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : {}}
-                  transition={{ delay: 0.4 + index * 0.1, duration: 0.5 }}
-                >
-                  <div className="bg-gradient-to-r from-yellow-400 to-amber-500 text-white px-4 py-1 rounded-full text-sm font-semibold shadow-lg flex items-center gap-1">
-                    <FaStar className="text-xs" />
-                    <span>{t.services.mostPopular}</span>
-                  </div>
-                </motion.div>
-              )}
+             
 
               {/* Background Glow */}
               <div className={`absolute inset-0 ${service.gradient} rounded-3xl opacity-0 group-hover:opacity-10 blur-xl transition-opacity duration-500`} />

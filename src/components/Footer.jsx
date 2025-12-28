@@ -12,14 +12,14 @@ export default function Footer(){
   const contactItems = [
     {
       icon: FaPhone,
-      text: '+34 612 345 678',
-      href: 'tel:+34612345678',
+      text: '+34 684 78 12 25',
+      href: 'tel:+34684781225',
       delay: 0.1
     },
     {
       icon: FaEnvelope,
-      text: 'hello@lorena.com',
-      href: 'mailto:hello@lorena.com',
+      text: 'lorenacebrianpsicología@hotmail.com',
+      href: 'mailto:lorenacebrianpsicología@hotmail.com',
       delay: 0.2
     },
     {

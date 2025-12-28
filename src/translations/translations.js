@@ -16,9 +16,11 @@ export const translations = {
     about: {
       licensed: 'Licensed',
       experience: 'Safe Space',
-      name: 'Dr. Lorena',
-      title: 'Licensed Clinical Psychologist',
+      name: 'Lorena Cebrián Psicología',
+      title: 'Psicóloga General Sanitaria',
       description: 'Specializing in Cognitive Behavioral Therapy, mindfulness practices, and trauma-informed care. I provide evidence-based therapy tailored to your unique journey toward healing and growth.',
+      ctaTitle: 'Start Your Change Process',
+      imageAlt: 'Dr. Lorena, Licensed Psychologist',
       cbtHighlight: 'Cognitive Behavioral Therapy',
       approaches: [
         { title: 'Evidence-Based', desc: 'Scientifically proven methods' },
@@ -274,25 +276,26 @@ export const translations = {
     
     // About Section
     about: {
-      licensed: 'Licenciada',
-      experience: 'Espacio Seguro',
-      name: 'Dra. Lorena',
-      title: 'Psicóloga Clínica Licenciada',
-      description: 'Especializada en Terapia Cognitivo Conductual, prácticas de mindfulness y atención informada en trauma. Proporciono terapia basada en evidencia adaptada a tu viaje único hacia la sanación y el crecimiento.',
-      cbtHighlight: 'Terapia Cognitivo Conductual',
+      licensed: 'Colegiada M-41425',
+      name: 'Lorena Cebrián Psicología',
+      title: 'Psicóloga General Sanitaria',
+      description: 'Acompaño a personas en procesos de transformación emocional y psicológica desde un enfoque integrador, contemplando los modelos de apego y trauma. Mi compromiso es ofrecerte un espacio seguro, respetuoso y comprensivo, donde puedas conocer cómo es tu funcionamiento, reconectar contigo y avanzar hacia un camino de mayor coherencia interna y bienestar.',
+      ctaTitle: 'Inicia aquí tu proceso de cambio',
+      imageAlt: 'Lorena Cebrián, Psicóloga General Sanitaria',
+      cbtHighlight: 'enfoque integrador',
       approaches: [
-        { title: 'Basado en Evidencia', desc: 'Métodos científicamente probados' },
-        { title: 'Personalizado', desc: 'Adaptado a tus necesidades' },
-        { title: 'Confidencial', desc: 'Espacio seguro y privado' },
-        { title: 'Sostenible', desc: 'Sanación a largo plazo' }
+        { title: 'Basado en la Neurociencia', desc: 'Psicoeducación y terapia basada en teorías respaldadas por la neurociencia' },
+        { title: 'Técnicas de Trauma y Apego', desc: 'EMDR, Técnicas de Integración Cerebral (TIC) y movimientos oculares para el tratamiento de las experiencias traumáticas' },
+        { title: 'Comprensiva con la Neurodivergencia', desc: 'Comprensión sobre el funcionamiento de las personas neurodivergentes (Altas Capacidades Intelectuales, TDAH y TEA) y adaptación de la terapia según sus necesidades y funcionamiento' },
+        { title: 'Perspectiva Somática', desc: 'Atención holística del ser humano desde una perspectiva mente-cuerpo' }
       ],
-      areasTitle: 'Áreas de Enfoque',
+      areasTitle: 'Servicios en Psicoterapia',
       specialties: [
-        'Trastornos de Ansiedad', 'Depresión', 'Recuperación de Trauma', 'Transiciones de Vida',
-        'Mindfulness', 'Problemas de Relación', 'Autoestima', 'Manejo del Estrés'
+        'Trastornos de Ansiedad', 'Depresión', 'Intervención en Trauma', 'Transiciones de Vida',
+        'Problemas emocionales', 'Problemas de Relación', 'Autoestima', 'Manejo del Estrés'
       ],
-      cta: 'Comienza Tu Viaje',
-      ctaSubtext: 'Consulta gratuita de 15 minutos • Horarios flexibles'
+      cta: 'Contacta aquí',
+      ctaSubtext: 'Primera llamada gratuita'
     },
     
     // Benefits Section
@@ -328,37 +331,37 @@ export const translations = {
     
     // Services Section
     services: {
-      badge: 'Precios Transparentes',
-      title: 'Servicios e Inversión',
-      subtitle: 'Invierte en tu bienestar con precios transparentes y accesibles para apoyo terapéutico profesional',
+      badge: 'Servicios de Psicología y Medicina',
+      title: 'SERVICIOS OFRECIDOS',
+      subtitle: 'Inicia tu proceso psicoterapéutico para conseguir un mayor bienestar',
       mostPopular: 'Más Popular',
       perSession: 'por sesión',
-      bookNow: 'Reservar Ahora',
-      visitReferral: 'Visitar Referencia',
+      bookNow: 'Pide cita',
+      visitReferral: 'Contacta y conoce al Dr. Cebrián',
       cards: [
         {
-          title: 'Terapia Individual',
-          description: 'Sesiones personalizadas de 50 minutos enfocadas en tus necesidades y objetivos únicos',
+          title: 'Terapia Individual para Adultos',
+          description: 'Sesión online y presencial en Madrid',
           price: '50 €',
           duration: 'sesión de 50 min',
-          features: ['Enfoque Personalizado', 'Espacio Confidencial', 'Sesiones Semanales']
+          features: ['Espacio seguro y confidencial', 'Atención en español, valenciano/catalán e inglés']
         },
         {
-          title: 'Terapia de Pareja',
-          description: 'Sesiones de 50 minutos diseñadas para mejorar la comunicación y fortalecer las relaciones',
+          title: 'Terapia Individual para Adolescentes',
+          description: 'Sesión online y presencial en Madrid',
           price: '50 €',
           duration: 'sesión de 50 min',
-          features: ['Habilidades de Comunicación', 'Resolución de Conflictos', 'Crecimiento de la Relación']
+          features: ['Espacio seguro y confidencial', 'Atención en español, valenciano/catalán e inglés']
         },
         {
-          title: 'Referencia Especializada',
-          subtitle: 'Dra. María Martínez',
-          description: 'Para EMDR enfocado en trauma especializado, TEPT complejo e intervenciones terapéuticas avanzadas',
-          features: ['Terapia EMDR', 'Especialista en Trauma', 'Intervenciones Avanzadas']
+          title: 'Medicina Interna Dr. Diego Ramón Cebrián Novella ',
+          subtitle: 'Servicio de atención en Medicina Interna con perspectiva psicosomática ',
+          description: 'Ayuda especializada',
+          features: ['Atención en alemán, valenciano/catalán y español', 'Consulta presencial en Madrid', 'Consulta online']
         }
       ],
       insuranceNote: 'Seguro y Pago:',
-      insuranceText: 'Se aceptan muchos planes de seguro. Escala móvil disponible para quienes lo necesiten. Consulta gratuita de 15 minutos para asegurar que somos la opción adecuada.'
+      insuranceText: 'Si tienes dudas o quieres solicitar información sobre los servicios, puedes escribirnos y te llamaremos sin ningún tipo de compromiso.'
     },
     
     // Contact Form
@@ -393,8 +396,8 @@ export const translations = {
     
     // Qualifications Section
     qualifications: {
-      title: 'Cualificaciones Profesionales',
-      subtitle: 'Experiencia confiable respaldada por educación extensa, certificaciones y experiencia clínica',
+      title: 'Formación y Experiencia',
+      subtitle: 'Formación reglada y oficial para el ejercicio de la psicoterapia.  Experiencia profesional desde el 2017 en el ejercicio de la psicología',
       badge: 'Profesional Verificada y Licenciada',
       cards: [
         {
@@ -456,7 +459,7 @@ export const translations = {
     
     // Blog Showcase Section
     blogShowcase: {
-      title: 'Perspectivas e Historias',
+      title: 'BLOG Y ARTÍCULOS',
       subtitle: 'Explora perspectivas profesionales e historias de crecimiento personal de nuestro blog de terapia',
       readMore: 'Leer más',
       viewAll: 'Ver Todos los Artículos',
@@ -467,8 +470,8 @@ export const translations = {
     
     // Footer
     footer: {
-      professionalNote: 'Servicios de Terapia Profesional',
-      services: 'Psicóloga Licenciada • Sesiones Confidenciales • Enfoques Basados en Evidencia • Atención Personalizada',
+      professionalNote: 'Servicios de Psicoterapia Profesional',
+      services: ' Psicóloga General Sanitaria • Sesiones Confidenciales • Enfoques Basados en la Evidencia • Atención Centrada en la Persona',
       craftedWith: 'Creado con',
       forWellbeing: 'para tu bienestar',
       allRights: 'Todos los derechos reservados',

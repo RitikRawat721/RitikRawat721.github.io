@@ -100,7 +100,7 @@ export default function About() {
           
           {/* Image Grid Area - Creative Placement */}
           <motion.div 
-            className="lg:col-span-5 grid grid-cols-2 gap-6"
+            className="lg:col-span-5 grid grid-cols-1 gap-6"
             variants={gridItemVariants}
           >
             {/* Main Image */}
@@ -111,8 +111,8 @@ export default function About() {
                 transition={{ duration: 0.4 }}
               >
                 <motion.img 
-                  src='/doctor.jpg' 
-                  alt='Dr. Lorena, Licensed Psychologist' 
+                  src='../public/Lorena.jpg' 
+                  alt={t.about.imageAlt} 
                   className="w-full h-auto object-cover aspect-[3/4]"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6 }}
@@ -130,21 +130,12 @@ export default function About() {
               transition={{ duration: 0.3 }}
             >
               <div className="text-center">
-                <div className="text-2xl font-bold mb-1">✓</div>
+                
                 <div className="text-sm font-semibold">{t.about.licensed}</div>
               </div>
             </motion.div>
 
-            <motion.div
-              className="bg-white/80 p-6 rounded-2xl shadow-xl border border-gray-200"
-              whileHover={{ y: -4, scale: 1.02 }}
-              transition={{ duration: 0.3 }}
-            >
-              <div className="text-center">
-                <div className="text-2xl mb-1">🛡️</div>
-                <div className="text-sm font-semibold text-gray-700">{t.about.experience}</div>
-              </div>
-            </motion.div>
+
           </motion.div>
 
           {/* Content Grid Area */}
@@ -302,7 +293,7 @@ export default function About() {
               >
                 <div className="lg:col-span-3 text-center lg:text-left">
                   <h4 className="text-2xl font-bold text-gray-900 mb-2">
-                    Start Your Healing Journey Today
+                    {t.about.ctaTitle}
                   </h4>
                   <p className="text-gray-700">
                     {t.about.ctaSubtext}

@@ -149,7 +149,7 @@ export default function Navbar() {
               scrolled ? 'text-lg' : 'text-xl'
             } transition-all duration-300`}
           >
-            Dr. Lorena
+            Lorena Cebrián Psicología
           </motion.div>
         </motion.div>
 
