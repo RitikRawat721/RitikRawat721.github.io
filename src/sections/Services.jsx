@@ -89,7 +89,7 @@ export default function Services() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <motion.div
+          {/* <motion.div
             className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold text-[#1A1D29]/70 mb-6 border border-neutral-border shadow-sm"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -97,7 +97,7 @@ export default function Services() {
           >
             <FaStar className="text-yellow-500" />
             <span>{t.services.badge}</span>
-          </motion.div>
+          </motion.div> */}
 
           <motion.h2 
             className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-br from-white via-primary-hover to-white bg-clip-text text-transparent mb-6"
@@ -290,7 +290,7 @@ export default function Services() {
         </motion.div>
 
         {/* Additional Info */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-12 bg-white/50 backdrop-blur-sm rounded-2xl p-8 border border-neutral-border shadow-lg max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -304,7 +304,7 @@ export default function Services() {
           >
             💫 <strong>{t.services.insuranceNote}</strong> {t.services.insuranceText}
           </motion.p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.section>
   )

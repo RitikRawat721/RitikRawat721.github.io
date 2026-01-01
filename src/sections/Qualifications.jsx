@@ -197,7 +197,7 @@ export default function Qualifications() {
         </motion.div>
 
         {/* Trust Badge */}
-        <motion.div
+        {/* <motion.div
           className="text-center mt-16 pt-8 border-t border-neutral-border"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -211,7 +211,7 @@ export default function Qualifications() {
             <div className="w-3 h-3 bg-primary rounded-full animate-pulse" />
             <span className="font-semibold">{t.qualifications.badge}</span>
           </motion.div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.section>
   )

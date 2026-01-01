@@ -18,14 +18,14 @@ export default function Footer(){
     },
     {
       icon: FaEnvelope,
-      text: 'lorenacebrianpsicología@hotmail.com',
-      href: 'mailto:lorenacebrianpsicología@hotmail.com',
+      text: 'lorenacebrianpsicologia@hotmail.com',
+      href: 'mailto:lorenacebrianpsicologia@hotmail.com',
       delay: 0.2
     },
     {
       icon: FaWhatsapp,
       text: 'WhatsApp',
-      href: 'https://wa.me/34612345678',
+      href: 'https://wa.me/34684781225',
       delay: 0.3
     }
   ]

@@ -111,7 +111,7 @@ export default function About() {
                 transition={{ duration: 0.4 }}
               >
                 <motion.img 
-                  src='../public/Lorena.jpg' 
+                  src='.Lorena.jpg' 
                   alt={t.about.imageAlt} 
                   className="w-full h-auto object-cover aspect-[3/4]"
                   whileHover={{ scale: 1.05 }}

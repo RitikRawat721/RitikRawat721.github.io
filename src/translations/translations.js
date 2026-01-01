@@ -289,10 +289,11 @@ export const translations = {
         { title: 'Comprensiva con la Neurodivergencia', desc: 'Comprensión sobre el funcionamiento de las personas neurodivergentes (Altas Capacidades Intelectuales, TDAH y TEA) y adaptación de la terapia según sus necesidades y funcionamiento' },
         { title: 'Perspectiva Somática', desc: 'Atención holística del ser humano desde una perspectiva mente-cuerpo' }
       ],
-      areasTitle: 'Servicios en Psicoterapia',
+      areasTitle: 'Áreas de Intervención',
       specialties: [
         'Trastornos de Ansiedad', 'Depresión', 'Intervención en Trauma', 'Transiciones de Vida',
-        'Problemas emocionales', 'Problemas de Relación', 'Autoestima', 'Manejo del Estrés'
+        'Problemas emocionales', 'Problemas de Relación', 'Autoestima', 'Manejo del Estrés', 
+        'Duelo', 'Dolor Crónico ', 'Discapacidad', 'Crecimiento Personal', 'Neurodivergencias'
       ],
       cta: 'Contacta aquí',
       ctaSubtext: 'Primera llamada gratuita'

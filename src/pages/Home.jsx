@@ -2,7 +2,7 @@
 import About from '../sections/About'
 import Qualifications from '../sections/Qualifications'
 import Benefits from '../sections/Benefits'
-import HelpCards from '../sections/HelpCards'
+// import HelpCards from '../sections/HelpCards'
 import Services from '../sections/Services'
 import BlogShowcase from '../sections/BlogShowcase'
 import ContactForm from '../sections/ContactForm'
@@ -36,18 +36,22 @@ export default function Home(){
       <section className='max-w-6xl mx-auto px-6 py-6'>
         <Qualifications />
       </section>
-      <section className='max-w-6xl mx-auto px-6 py-6'>
+      
+     {/* <section className='max-w-6xl mx-auto px-6 py-6'>
         <Benefits />
-      </section>
-      <section className='max-w-6xl mx-auto px-6 py-6'>
+      </section>}
+      {/* HELPCards section - temporarily hidden */}
+     {/*<section className='max-w-6xl mx-auto px-6 py-6'>
         <HelpCards />
-      </section>
+      </section> */}
+      
       <section id='services' className='max-w-6xl mx-auto px-6 py-6'>
         <Services />
-      </section>
-      <section className='max-w-6xl mx-auto px-6 py-6'>
+      </section> 
+      {/* BlogShowcase section - temporarily hidden */}
+      {/*<section className='max-w-6xl mx-auto px-6 py-6'>
         <BlogShowcase />
-      </section>
+      </section>*/}
       <section id='contact' className='max-w-6xl mx-auto px-6 py-6'>
         <ContactForm />
       </section>
