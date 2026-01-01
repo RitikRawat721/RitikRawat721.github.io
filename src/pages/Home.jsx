@@ -37,11 +37,13 @@ export default function Home(){
         <Qualifications />
       </section>
       
-     {/* <section className='max-w-6xl mx-auto px-6 py-6'>
+      {/* Benefits section - temporarily hidden */}
+      {/* <section className='max-w-6xl mx-auto px-6 py-6'>
         <Benefits />
-      </section>}
+      </section> */}
+      
       {/* HELPCards section - temporarily hidden */}
-     {/*<section className='max-w-6xl mx-auto px-6 py-6'>
+      {/* <section className='max-w-6xl mx-auto px-6 py-6'>
         <HelpCards />
       </section> */}
       
